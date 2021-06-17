@@ -1,3 +1,3 @@
-# jViverosb.github.io
+# pendientes.github.io
 Proyecto web
-https://jviverosb.github.io/
+https://pendientes.github.io/
