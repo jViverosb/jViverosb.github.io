@@ -50,14 +50,6 @@ function showTasks(){
   todoList.innerHTML = newLiTag; 
   inputBox.value = ""; 
 }
-
-function deleteTask(index){
-  let getLocalStorageData = localStorage.getItem("Nueva tarea");
-  listArray = JSON.parse(getLocalStorageData);
-  listArray.splice(index, 1); 
-  localStorage.setItem("Nueva tarea", JSON.stringify(listArray));
-  showTasks(); 
-}
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
