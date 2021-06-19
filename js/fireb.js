@@ -45,3 +45,15 @@
         console.log(e);
         alert(e.message);
       } 
+  // Set the configuration for your app
+  // TODO: Replace with your app's config object
+  var firebaseConfig = {
+    apiKey: "AIzaSyCMAl6K5nkzVh__a-6S1SvJk7OpU6fLZT0",
+    authDomain: "todolist-44d12.firebaseapp.com",
+    databaseURL: "https://console.firebase.google.com/project/todolist-44d12/storage/todolist-44d12.appspot.com/files",
+    storageBucket: "todolist-44d12.appspot.com"
+  };
+  firebase.initializeApp(firebaseConfig);
+
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  var storage = firebase.storage();
