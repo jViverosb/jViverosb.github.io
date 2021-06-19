@@ -51,18 +51,19 @@
   
     <script>
      // Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.GoogleAuthProvider(firebase.auth());
-     ui.start('#firebaseui-auth-container', {
+var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        ui.start('#firebaseui-auth-container', {
   signInOptions: [
     // List of OAuth providers supported.
     firebase.auth.GoogleAuthProvider
   ],
   // Other config options...
 });
-        // Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.GoogleAuthProvider(firebase.auth());
-        <!-- The surrounding HTML is left untouched by FirebaseUI. Your app may use that space for branding, controls and other customizations.-->
-<h1>Bienvenido a tu lista de pendientes!</h1>
+     // Initialize the FirebaseUI Widget using Firebase.
+var ui = new firebaseui.auth.GoogleAuthProvider(firebase.auth());  
+        <!-- The surrounding HTML is left untouched by FirebaseUI.
+     Your app may use that space for branding, controls and other customizations.-->
+<h1>Bienvenid@ a tu lista de pendientes</h1>
 <div id="firebaseui-auth-container"></div>
 <div id="loader">Cargando...</div>
         var uiConfig = {
@@ -84,15 +85,15 @@ var ui = new firebaseui.auth.GoogleAuthProvider(firebase.auth());
   signInSuccessUrl: '<url-to-redirect-to-on-success>',
   signInOptions: [
     // Leave the lines as is for the providers you want to offer your users.
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.GoogleAuthProvider
   ],
   // Terms of service url.
   tosUrl: '<your-tos-url>',
   // Privacy policy url.
   privacyPolicyUrl: '<your-privacy-policy-url>'
 };
-        // The start method will wait until the DOM is loaded.
-ui.start('#firebaseui-auth-container', uiConfig);
+     // The start method will wait until the DOM is loaded.
+ui.start('#firebaseui-auth-container', uiConfig);   
     </script>
 </body>
 </html>
