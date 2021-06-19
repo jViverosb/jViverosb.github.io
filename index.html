@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendientes</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- Carga el núcleo de Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <!-- Agrega el manejo de autenticación. -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"> </script>   
+<script src="js/init.js"></script>
+    
+</head>
+   
+<body>
+  <div class="wrapper">
+    <header>Lista de Tareas/Cosas por hacer</header>
+    <div class="inputField">
+      <input type="text" placeholder="Agrega nueva tarea">
+      <button>+</button>
+    </div>
+    <ul class="todoList">
+    </ul>
+    <div class="footer">
+      <span>Tienes <span class="pendingTasks"></span> tarea(s) activas.</span>
+        Presiona sobre la tarea para tacharla.</span>
+      <button>Borrar todo</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/fireb.js"></script>
+</body>
+</html>
