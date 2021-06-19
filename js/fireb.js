@@ -64,3 +64,12 @@ TEXTO: texto.value.trim(),
 TIMESTAMP: firebase.firestore.FieldValue.serverTimestamp()
 });
 }
+
+// Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: "AIzaSyCMAl6K5nkzVh__a-6S1SvJk7OpU6fLZT0",
+  authDomain: "todolist-44d12.firebaseapp.com",
+  projectId: "todolist-44d12"
+});
+
+var db = firebase.firestore();
