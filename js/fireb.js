@@ -57,3 +57,10 @@
 
   // Get a reference to the storage service, which is used to create references in your storage bucket
   var storage = firebase.storage();
+const firestore = firebase.firestore();
+function agrega(){
+firestore.collection("PENDIENTES").add({
+TEXTO: texto.value.trim(),
+TIMESTAMP: firebase.firestore.FieldValue.serverTimestamp()
+});
+}
